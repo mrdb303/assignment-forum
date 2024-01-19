@@ -54,7 +54,7 @@ export default function App() {
 
 
   async function sendPost(event) {
-    //event.preventDefault();
+    event.preventDefault();
     //clearGuestbookMessageContainer();
     //let attr = this.getAttribute("data-id"); // rowid value from sqlite3
     

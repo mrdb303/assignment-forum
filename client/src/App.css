@@ -156,7 +156,7 @@ button:hover {
 
 
 .like-button, .delete-button {
-  background: url("./images/thumb_up.svg") center no-repeat;
+  /* background: url("./images/thumb_up.svg") center no-repeat; */
   color: white;
   background-color: #2f472b;
   width: 2rem;
@@ -168,7 +168,7 @@ button:hover {
 
 
 .delete-button {
-  background: url("./images/delete.svg") center no-repeat;
+  /* background: url("./images/delete.svg") center no-repeat; */
   background-color: darkred;
 }
 
