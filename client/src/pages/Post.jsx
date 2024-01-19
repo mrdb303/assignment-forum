@@ -6,7 +6,7 @@ export default function Post({form, setForm, servUrl}){
 
 
   async function getPosts(event) {
-    //event.preventDefault();
+    event.preventDefault();
     //clearGuestbookMessageContainer();
     //let attr = this.getAttribute("data-id"); // rowid value from sqlite3
     

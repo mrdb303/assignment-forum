@@ -45,7 +45,7 @@ export default function App() {
     });
   }
 
-  getDataFromPageRequest('/posts', []);
+  getDataFromPageRequest('/posts');
 
   
   //getDataFromPageRequest('/posts');
