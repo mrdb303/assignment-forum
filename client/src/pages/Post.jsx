@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import IndivPost from "../components/IndivPost";
 
-export default function Post({form, setForm}){
+export default function Post({form, setForm, servUrl}){
 
 
 
@@ -14,7 +14,7 @@ export default function Post({form, setForm}){
     //const obj = {num, num, 'title', 'content', 0} 
     
     const obj = {dummydata: "Nothing to see here"};
-    const fullUrl = 'http://localhost:8080' + '/posts';
+    const fullUrl = servUrl + '/posts';
   
     const response = await fetch(fullUrl, {
       method: "POST",

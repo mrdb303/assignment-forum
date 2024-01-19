@@ -14,6 +14,11 @@ import './App.css'
 export default function App() {
   //const [count, setCount] = useState(0)
 
+  const isServUrlLocal = false;
+  const servUrl = '';
+  servUrl = (isServUrlLocal)? 'http://localhost:8080':'https://db-assignment-forum-serv.onrender.com';
+
+
   const [dataFromDb, getDataFromDb] = useState([]);
 
 
@@ -28,7 +33,7 @@ export default function App() {
 
 
   async function getDataFromPageRequest(url) {
-    const fullUrl = 'http://localhost:8080' + url;
+    const fullUrl = servUrl + url;
     //console.log(fullUrl);
     const response = await fetch(fullUrl);
     const allEntries = await response.json();
@@ -57,7 +62,7 @@ export default function App() {
     //const obj = {num, num, 'title', 'content', 0} 
     
     const obj = {dummydata: "Nothing to see here"};
-    const fullUrl = 'http://localhost:8080' + '/createpost';
+    const fullUrl = servUrl + '/createpost';
   
     const response = await fetch(fullUrl, {
       method: "POST",
@@ -94,7 +99,7 @@ export default function App() {
           </Routes>
 
           {(page==='home')?<Home />: null}
-          {(page==='posts')?<Post />: null}
+          {(page==='posts')?<Post servUrl={servUrl}/>: null}
           {/*(page==='categories')?<Categories />: null*/}
         </div>
       <Footer />
