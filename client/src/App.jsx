@@ -16,7 +16,7 @@ export default function App() {
 
   const isServUrlLocal = false;
   let servUrl = '';
-  servUrl = (isServUrlLocal)? 'http://localhost:8080':'https://db-assignment-forum-serv.onrender.com:8080';
+  servUrl = (isServUrlLocal)? 'http://localhost:8080':'https://db-assignment-forum-serv.onrender.com';
 
 
   const [dataFromDb, getDataFromDb] = useState([]);
