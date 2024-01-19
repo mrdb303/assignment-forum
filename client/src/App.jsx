@@ -15,7 +15,7 @@ export default function App() {
   //const [count, setCount] = useState(0)
 
   const isServUrlLocal = false;
-  const servUrl = '';
+  let servUrl = '';
   servUrl = (isServUrlLocal)? 'http://localhost:8080':'https://db-assignment-forum-serv.onrender.com:8080';
 
 
