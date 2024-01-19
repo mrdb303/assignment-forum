@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "clientbuild": "cp -r ./src  ./dist"
+    "clientbuild": "cp -r ./src ./dist"
   },
   "dependencies": {
     "react": "^18.2.0",
